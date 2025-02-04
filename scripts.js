@@ -7,6 +7,8 @@
     const usuario = document.querySelector('#client')
     const pontos = document.querySelectorAll('.dots i')
 
+    var y = window.matchMedia("(max-width: 1050px)")
+
     var x = window.matchMedia("(max-width: 770px)")
 
 //Header
@@ -17,7 +19,12 @@ function scrollHome() {
 }
 
 function scrollAreas() {
-    if (x.matches) {
+    if (y.matches) {
+        window.scrollTo({
+            top:1850,
+            behavior: 'smooth'})
+    }
+    else if (x.matches) {
         window.scrollTo({
             top:2330,
             behavior: 'smooth'})
@@ -30,7 +37,12 @@ function scrollAreas() {
 }
 
 function scrollOffice() {
-    if (x.matches) {
+    if (y.matches) {
+        window.scrollTo({
+            top:3910,
+            behavior: 'smooth'})
+    }
+    else if (x.matches) {
         window.scrollTo({
             top:4340,
             behavior: 'smooth'})
@@ -43,7 +55,12 @@ function scrollOffice() {
 }
 
 function scrollComments() {
-    if (x.matches) {
+    if (y.matches) {
+        window.scrollTo({
+            top:5910,
+            behavior: 'smooth'})
+    }
+    else if (x.matches) {
         window.scrollTo({
             top:6330,
             behavior: 'smooth'})
@@ -66,7 +83,6 @@ function scrollLocal() {
             })
         }
 }
-
 
 
 //Depoimentos
