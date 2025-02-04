@@ -788,6 +788,10 @@ footer {
         margin: 0px 20px;
     }
 
+    .section h3 {
+        font-size: 20px;
+    }
+
     .section-container{
         flex-direction: column;
     }
