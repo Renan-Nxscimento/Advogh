@@ -15,28 +15,54 @@ function scrollHome() {
 }
 
 function scrollAreas() {
-    window.scrollTo({
-        top:1580,
-        behavior: 'smooth'})
+    if (x.matches) {
+        window.scrollTo({
+            top:2330,
+            behavior: 'smooth'})
+        } else {
+            window.scrollTo({
+                top:1780,
+                behavior: 'smooth'})
+        }
+    
 }
 
 function scrollOffice() {
-    window.scrollTo({
-        top:2680,
-        behavior: 'smooth'})
+    if (x.matches) {
+        window.scrollTo({
+            top:4340,
+            behavior: 'smooth'})
+        } else {
+            window.scrollTo({
+                top:2860,
+                behavior: 'smooth'})
+        }
+
 }
 
 function scrollComments() {
-    window.scrollTo({
-        top:3840,
-        behavior: 'smooth'})
+    if (x.matches) {
+        window.scrollTo({
+            top:6330,
+            behavior: 'smooth'})
+        } else {
+            window.scrollTo({
+                top:4020,
+                behavior: 'smooth'})
+        }
 }
 
 function scrollLocal() {
-    window.scrollTo({
-        top: 4780,
-        behavior: "smooth"
-    })
+    if (x.matches) {
+        window.scrollTo({
+            top:7200,
+            behavior: 'smooth'})
+        } else {
+            window.scrollTo({
+                top: 4780,
+                behavior: "smooth"
+            })
+        }
 }
 
 
