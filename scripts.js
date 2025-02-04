@@ -7,6 +7,8 @@
     const usuario = document.querySelector('#client')
     const pontos = document.querySelectorAll('.dots i')
 
+    var x = window.matchMedia("(max-width: 770px)")
+
 //Header
 function scrollHome() {
     window.scrollTo({
