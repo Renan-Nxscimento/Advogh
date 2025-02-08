@@ -13,75 +13,23 @@
 
 //Header
 function scrollHome() {
-    window.scrollTo({
-        top:0,
-        behavior: 'smooth'})
+    document.querySelector('.home-container').scrollIntoView()
 }
 
 function scrollAreas() {
-    if (y.matches) {
-        window.scrollTo({
-            top:1850,
-            behavior: 'smooth'})
-    }
-    else if (x.matches) {
-        window.scrollTo({
-            top:2330,
-            behavior: 'smooth'})
-        } else {
-            window.scrollTo({
-                top:1780,
-                behavior: 'smooth'})
-        }
-    
+    document.querySelector('.areas-section').scrollIntoView()
 }
 
 function scrollOffice() {
-    if (y.matches) {
-        window.scrollTo({
-            top:3910,
-            behavior: 'smooth'})
-    }
-    else if (x.matches) {
-        window.scrollTo({
-            top:4340,
-            behavior: 'smooth'})
-        } else {
-            window.scrollTo({
-                top:2860,
-                behavior: 'smooth'})
-        }
-
+    document.querySelector('.office-section').scrollIntoView()
 }
 
 function scrollComments() {
-    if (y.matches) {
-        window.scrollTo({
-            top:5910,
-            behavior: 'smooth'})
-    }
-    else if (x.matches) {
-        window.scrollTo({
-            top:6330,
-            behavior: 'smooth'})
-        } else {
-            window.scrollTo({
-                top:4020,
-                behavior: 'smooth'})
-        }
+    document.querySelector('.comment-section').scrollIntoView()
 }
 
 function scrollLocal() {
-    if (x.matches) {
-        window.scrollTo({
-            top:7200,
-            behavior: 'smooth'})
-        } else {
-            window.scrollTo({
-                top: 4780,
-                behavior: "smooth"
-            })
-        }
+    document.querySelector('.bottom-section').scrollIntoView()
 }
 
 
